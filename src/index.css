@@ -13,3 +13,6 @@ header{
       object-fit: cover; /* Image crop hogi aur proper dikhayi degi */
     }
   }
+.animate:hover{
+    transform: scale(1,1.1);
+}
