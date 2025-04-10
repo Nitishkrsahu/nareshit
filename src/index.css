@@ -7,6 +7,15 @@ body{
 header{
     padding-right: 80px !important;
 }
+.carousel-item img{
+    filter: brightness(70%);
+}
+section{
+    background-color: rgb(208, 206, 206);
+}
+.section-2{
+    background-color: rgb(135, 96, 46)!important;
+}
 @media (min-width: 992px) { /* Desktop screen ke liye */
     .carousel-inner img {
       height: 500px;     /* Aap apne according set kar sakte ho */
@@ -15,4 +24,25 @@ header{
   }
 .animate:hover{
     transform: scale(1,1.1);
+}
+.animate-image{
+    filter: brightness(70%);
+}
+.animate-image:hover{
+    transform: scale(1,1.1);
+}
+@media screen and (min-width: 1200px){
+    .card-container{
+        height: 550px;
+    }
+}
+@media screen and (max-width: 1199px){
+    .card-container{
+        height: 1050px;
+    }
+}
+@media screen and (max-width: 575px){
+    .card-container{
+        height: 2000px;
+    }
 }
