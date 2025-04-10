@@ -1,0 +1,15 @@
+p, h1,h2,h3,h4,li{
+    font-family: 'Libre Caslon Text',serif;
+}
+body{
+    font-family: 'Montserrat',sans-serif;
+}
+header{
+    padding-right: 80px !important;
+}
+@media (min-width: 992px) { /* Desktop screen ke liye */
+    .carousel-inner img {
+      height: 500px;     /* Aap apne according set kar sakte ho */
+      object-fit: cover; /* Image crop hogi aur proper dikhayi degi */
+    }
+  }
