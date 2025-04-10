@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="../src/index.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Contact-Us</h1>
+    <div class="w-100 vh-100 d-flex justify-content-center align-items-center">
+        <form class="w-50 form-control">
+            <div class="input-group d-grid row-cols-2">
+                <div>
+                    <label for="firstName" class="form-label">First Name: </label>
+                    <input type="text" class="form-control" id="firstName">
+                </div>
+                <div>
+                    <label for="lastName" class="form-label">Last Name: </label>
+                    <input type="text" class="form-control" id="lastName">
+                </div>
+            </div>
+            <div>
+                <label for="email" class="form-label">Email: </label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div>
+                <label for="name" class="form-label">Message: </label>
+                <textarea name="name" cols="100" rows="4"></textarea>
+            </div>
+            <button class="btn btn-warning w-100">Send</button>
+        </form>
+    </div>
+</body>
+</html>
