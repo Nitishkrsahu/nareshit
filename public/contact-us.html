@@ -12,30 +12,77 @@
 </head>
 
 <body>
-    <h1 style="text-align: center;">Contact-Us</h1>
-    <div class="w-100 vh-100 d-flex justify-content-center align-items-center">
-        <form class="w-50 form-control">
-            <div class="input-group d-grid row-cols-2">
-                <div>
-                    <label for="firstName" class="form-label">First Name: </label>
-                    <input type="text" class="form-control" id="firstName">
-                </div>
-                <div>
-                    <label for="lastName" class="form-label">Last Name: </label>
-                    <input type="text" class="form-control" id="lastName">
-                </div>
+    <header class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="container-fluid">
+            <div class="container-fluid d-flex justify-content-between">
+                <a class="navbar-brand" href="index.html">
+                    <img src=".../../Images/naresh-it-logo.png" alt="Logo" width="150" height="40"
+                        class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-            <div>
-                <label for="email" class="form-label">Email: </label>
-                <input type="email" class="form-control" id="email">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active animate" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate" href="service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate" href="contact-us.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="bg-warning rounded rounded-2 p-2">Sign-In</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item  d-flex animate" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item  d-flex animate" href="register.html">Register</a></li>
+                            <li><a class="dropdown-item  d-flex animate" href="password.html">Forgot-Password</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <label for="name" class="form-label">Message: </label>
-                <textarea name="name" cols="100" rows="4"></textarea>
+        </nav>
+    </header>
+    <main style="background-color: #2B2E35;">
+        <h2 style="text-align: center;" class="text-white pt-4">Contact-Us</h2>
+        <div class="container col-md-6 col-12 p-4">
+            <div class="text-warning p-4 rounded rounded-4 box-shadow" style="background-color: #1F2132;">
+                <form class="row g-3">
+                    <div class="col-lg-6">
+                        <label for="firstName" class="form-label">First Name: </label>
+                        <input type="text" name="name" class="form-control text-white" style="background-color: #2B2E35;" required>
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="lastName" class="form-label">Last Name: </label>
+                        <input type="text" name="name" class="form-control text-white" style="background-color: #2B2E35;" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email: </label>
+                        <input type="email" name="email" class="form-control text-white" style="background-color: #2B2E35;" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">Message: </label>
+                        <textarea name="message" class="form-control text-white" style="background-color: #2B2E35;" id="message" rows="6" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-warning w-100"><span class="fw-bold">Submit</span></button>
+                    </div>
+                </form>
             </div>
-            <button class="btn btn-warning w-100">Send</button>
-        </form>
-    </div>
+        </div>
+    </main>
+  
     <footer>
         <div class="row container-fluid text-center bg-dark text-white pt-4 pb-4 p-0 m-0">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
