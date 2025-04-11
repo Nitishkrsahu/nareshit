@@ -16,6 +16,10 @@ section{
 .section-2{
     background-color: rgb(135, 96, 46)!important;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 @media (min-width: 992px) { /* Desktop screen ke liye */
     .carousel-inner img {
       height: 500px;     /* Aap apne according set kar sakte ho */
